@@ -1,3 +1,11 @@
+/* body {
+  display: flex;
+} */
+
+hr {
+  margin: 0;
+}
+/* 헤더 */
 header {
   display: flex;
   justify-content: space-evenly;
@@ -43,4 +51,102 @@ img:not(.search_logo) {
 
 .header_img > img {
   margin-right: 10px;
+}
+/* 인스타그램 섹션 */
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 550px;
+  height: 835px;
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.top_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.top_content > img {
+  width: 42px;
+  height: 42px;
+}
+
+.top_content > span {
+  font-weight: 700;
+  margin-top: 7px;
+  margin-left: -357px;
+}
+
+.middle_content > img {
+  width: 100%;
+  height: 50vh;
+}
+
+/* 좋아요 이모티콘 */
+.reaction {
+  padding: 5px;
+}
+
+.reaction > img:nth-child(-n + 4) {
+  margin-right: 3px;
+}
+
+.reaction > img:nth-child(4) {
+  margin-left: 425px;
+  margin-right: 0;
+}
+
+/* 내용 */
+.sentence {
+  line-height: 8px;
+  font-size: 16px;
+  margin: 8px;
+}
+
+.sentence > p:nth-child(1) {
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.sentence > p:nth-child(4) {
+  color: gray;
+}
+
+.sentence > span:nth-child(5) {
+  font-size: 11px;
+}
+
+/* 댓글 */
+.comment {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+  padding: 5px;
+  border-top: 1px solid gainsboro;
+}
+
+.comment > img {
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.comment > input {
+  border: none;
+  width: 450px;
+  margin-left: 10px;
+  height: 30px;
+  outline: none;
+}
+
+.comment > button {
+  color: dodgerblue;
+  background-color: transparent;
+  border: none;
 }
