@@ -1,0 +1,195 @@
+* {
+    font-size: 14px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+header div {
+    padding: 3px;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .logo .bar {
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+    margin: 0 10px;
+    padding: 0;
+}
+header .logo .instaFont a {
+    font-family: "Lobster", cursive;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+}
+header .search {
+    border: 1px solid rgb(189, 189, 189);
+    background-color: rgb(242, 242, 242);
+    color: rgb(79, 79, 79);
+    text-align: center;
+    font-size: 12px;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+}
+header .search img {
+    color: rgb(79, 79, 79);
+}
+header .search input {
+    border: none;
+    background-color: rgb(242, 242, 242);
+    outline: none;
+}
+header .icon {
+}
+header .icon img {
+    margin: 0 7px;
+}
+
+main {
+    background-color: rgb(242, 242, 242);
+    margin: 0;
+    padding: 50px 0;
+    width: 100%;
+}
+.main {
+    width: 400px;
+    background-color: #fff;
+    margin: 0 20%;
+    margin-bottom: 50px;
+    border: solid 1px rgb(218, 218, 218);
+}
+.main .main-header {
+    display: flex;
+    justify-content: space-between;
+}
+.main .main-header .box {
+    display: flex;
+    margin: 10px 0;
+}
+.main .main-header .box .personId {
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    padding: 0;
+}
+.main .main-header .box .radius {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-left: 10px;
+    border-radius: 50%;
+    background: url(../images/insta1.jpeg) no-repeat;
+}
+
+.main .main-header .dots {
+    margin: 13px 0;
+}
+.main .main-header .dots img {
+    margin-right: 10px;
+}
+
+.main .picture {
+    width: 400px;
+    height: 400px;
+    background: url(../images/insta1.jpeg) no-repeat 0 0;
+}
+.main .picture2 {
+    background: url(../images/insta2.jpeg) no-repeat 10% 0px;
+}
+.main .picture3 {
+    background: url(../images/insta3.jpeg) no-repeat 50%;
+}
+.main .picture4 {
+    background: url(../images/insta4.jpeg) no-repeat 50%;
+}
+.main .mainIcon {
+    margin-left: 8px;
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.main .mainIcon img {
+    margin: 3px;
+}
+
+.main .like {
+    margin-left: 10px;
+    margin-top: 3px;
+    display: flex;
+}
+.main .like .likePerson {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background: url(../images/insta2.jpeg) no-repeat;
+}
+.main .write {
+    margin: 10px;
+}
+.main .write a,
+.small {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+}
+.main .write .small {
+    font-size: 13px;
+}
+.bold {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.spancss {
+    font-weight: bold;
+    margin: 0 10px;
+}
+.main .hidden {
+    list-style: none;
+}
+.main .hidden li {
+}
+.main .comment {
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 8px; */
+    padding: 7px 0;
+    border-top: solid 1px rgb(218, 218, 218);
+}
+.main .comment input {
+    border: none;
+    padding: 0 8px;
+    width: 90%;
+    outline: none;
+}
+.main .comment button {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    width: 10%;
+    color: rgba(0, 123, 255, 0.375);
+    cursor: pointer;
+}
+.main .comment button:hover {
+    color: rgb(0, 123, 255);
+}
