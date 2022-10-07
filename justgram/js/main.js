@@ -5,6 +5,7 @@ const commenter = ["dmsrud55", "hi__", "hellow~", "rullru"];
 
 const hiddenArray = Array.from(maindiv);
 const btnArray = Array.from(btn);
+const inputArray = Array.from(input);
 // Array.from(변수 이름) => 각각의 배열로 바꿔줌
 
 btnArray.forEach((button, index) => {
@@ -31,7 +32,7 @@ btnArray.forEach((button, index) => {
 //         writeComment();
 //     }
 // });
-btnArray.forEach((enter, index) => {
+inputArray.forEach((enter, index) => {
     enter.addEventListener("keyup", function enterKey() {
         if (window.event.keyCode == "13") {
             const div = document.createElement("div");
