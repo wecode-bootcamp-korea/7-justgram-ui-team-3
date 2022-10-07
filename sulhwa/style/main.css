@@ -159,6 +159,7 @@ section{
     display: grid;
     gap: 15px;
     padding-left: 15px;
+    padding-bottom: 50px;
 }
 .story{
     border: 1px solid #dbdbdb;
@@ -314,7 +315,7 @@ section{
     align-items: center;
     color: #8e8e8e;
 }
-#comment{
+.comment  {
     display: grid;
     grid-template-columns: 35px 1fr 50px;
     align-items: center;
@@ -329,9 +330,12 @@ section{
 }
 .comment-btn{
     background-color: white;
-    color: #0095ff4f;
     font-size: 13px;
+    color: #0095ff;
     border: 0;
+}
+.comment-btn:disabled{
+    color: #0095ff4f;
 }
 .emoji{
     display: flex;
