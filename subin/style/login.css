@@ -1,0 +1,48 @@
+.hole-line {
+  margin: 30px auto;
+  width: 500px;
+  height: 600px;
+  border: 2px solid rgb(235 235 235);
+}
+.head-name {
+  margin-top: 50px;
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.login-center {
+  align-items: center;
+}
+.login {
+  background-color: rgb(250 250 250);
+  border: 1px solid rgb(235 235 235);
+}
+.login-button {
+  padding-left: 10px;
+  border-radius: 5px;
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.blue-button {
+  cursor: pointer;
+  width: 368px;
+  background-color: rgb(196 225 251);
+  border: none;
+  color: rgb(255 255 255);
+  margin: 25px auto;
+  font-size: 16px;
+}
+.alert {
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 40px;
+}
+a {
+  color: rgb(22 72 120);
+  text-decoration: none;
+}
