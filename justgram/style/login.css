@@ -1,0 +1,51 @@
+#container {
+    width: 430px;
+    height: 480px;
+    border: 1px solid rgb(200, 200, 200);
+    text-align: center;
+    margin: 100px auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+h1 {
+    font-family: "Lobster", cursive;
+    font-size: 50px;
+}
+input {
+    width: 300px;
+    padding: 13px 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+input:first-of-type {
+    margin-top: 20px;
+}
+button {
+    width: 325px;
+    padding: 12px 20px;
+    display: inline-block;
+    margin: 10px auto;
+    background-color: rgb(0, 128, 255);
+    border: none;
+    border-radius: 5px;
+}
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+.buttondisabled {
+    background-color: rgba(0, 128, 255, 0.387);
+}
+#psbox {
+    position: absolute;
+    bottom: 20px;
+    width: 430px;
+    text-align: center;
+}
+#psbox a {
+    text-decoration: none;
+    color: rgb(10, 92, 154);
+    font-weight: bold;
+}
