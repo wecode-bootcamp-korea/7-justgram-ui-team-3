@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <div class="header">
+        <div class="header-container">
+          <div class="logoTitle">
+            <span><img id="logoImg" src="image/logo.png" alt="logo" /></span>
+            <span class="title">|</span>
+            <span class="title">justgram</span>
+          </div>
+          <div class="searchBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="searchBar_input" type="search" placeholder="검색" />
+          </div>
+          <div class="icons">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+              alt="explore"
+            />
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              alt="heart"
+            />
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+              alt="profile"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 여기서부터 피드  -->
+      <div class="feedBox">
+        <div class="feedHeader">
+          <div class="profileBox">
+            <div class="profileInBox">
+              <div class="profileBorder">
+                <img
+                  class="profileImg"
+                  src="https://images.unsplash.com/photo-1633381521050-26bb467d9d5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+                  alt=""
+                />
+              </div>
+              <div class="profileInfo">
+                <div class="profileId">토마스</div>
+                <div class="feedLocation"><span>위워크 선릉점</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="profileMenu">
+            <button type="button">···</button>
+          </div>
+        </div>
+        <div class="feedImg">
+          <img
+            src="https://images.unsplash.com/photo-1664575600796-ffa828c5cb6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"
+            alt=""
+          />
+        </div>
+        <div class="feedMenubar">
+          <div class="iconBox">
+            <div class="likeBox">
+              <!-- 좋아요, 코멘트 등 아이콘 영역-->
+              <div class="heartImg"></div>
+              <div class="commentImg"></div>
+              <div class="dmImg"></div>
+            </div>
+            <!-- 피드 북마크 영역 -->
+            <div class="bookmarkBox">
+              <div class="bookmarkImg"></div>
+            </div>
+          </div>
+
+          <div class="likeCount">좋아요 387개</div>
+
+          <div class="commentList">
+            <div class="eachComments">
+              <span class="userName">토마스</span>
+              <span class="userComment">좋은 코드는 국밥에서 나온다!</span>
+            </div>
+
+            <div class="eachComments">
+              <span class="userName">튜터</span>
+              <span class="userComment">코드가 별로인가요?!</span>
+            </div>
+
+            <div class="eachComments">
+              <span class="userName">지나가는팀원</span>
+              <span class="userComment">과제 좀 빨리 제출해주세요!</span>
+            </div>
+          </div>
+        </div>
+        <!-- 덧글 영역 -->
+        <div class="feedComment">
+          <div class="comment">
+            <button class="emojiBtn" type="menu">
+              <i class="fa-regular fa-face-smile"></i>
+            </button>
+            <input
+              class="commentInput"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+          </div>
+          <div class="commentRegi">
+            <button class="postBtn" type="button" disabled>게시</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedBox">
+        <div class="feedHeader">
+          <div class="profileBox">
+            <div class="profileInBox">
+              <div class="profileBorder">
+                <img
+                  class="profileImg"
+                  src="https://images.unsplash.com/photo-1633381521050-26bb467d9d5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+                  alt=""
+                />
+              </div>
+              <div class="profileInfo">
+                <div class="profileId">jenifer</div>
+                <div class="feedLocation"><span>라마다호텔 신도림점</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="profileMenu">
+            <button type="button">···</button>
+          </div>
+        </div>
+        <div class="feedImg">
+          <img
+            src="https://images.unsplash.com/photo-1661956602139-ec64991b8b16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"
+            alt=""
+          />
+        </div>
+        <div class="feedMenubar">
+          <div class="iconBox">
+            <div class="likeBox">
+              <!-- 좋아요, 코멘트 등 아이콘 영역-->
+              <div class="heartImg"></div>
+              <div class="commentImg"></div>
+              <div class="dmImg"></div>
+            </div>
+            <!-- 피드 북마크 영역 -->
+            <div class="bookmarkBox">
+              <div class="bookmarkImg"></div>
+            </div>
+          </div>
+
+          <div class="likeCount">좋아요 387개</div>
+
+          <div class="commentList">
+            <div class="eachComments">
+              <span class="userName">jenifer</span>
+              <span class="userComment">이것이 코딩이다!!</span>
+            </div>
+
+            <div class="eachComments">
+              <span class="userName">지나가는팀원</span>
+              <span class="userComment">위워크 좀 나오세요!</span>
+            </div>
+
+            <div class="eachComments">
+              <span class="userName">지나가는사진가</span>
+              <span class="userComment">사진이 별로에요!!</span>
+            </div>
+          </div>
+        </div>
+        <!-- 덧글 영역 -->
+        <div class="feedComment">
+          <div class="comment">
+            <button class="emojiBtn" type="menu">
+              <i class="fa-regular fa-face-smile"></i>
+            </button>
+            <input
+              class="commentInput"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+          </div>
+          <div class="commentRegi">
+            <button class="postBtn" type="button" disabled>게시</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedBox">
+        <div class="feedHeader">
+          <div class="profileBox">
+            <div class="profileInBox">
+              <div class="profileBorder">
+                <img
+                  class="profileImg"
+                  src="https://images.unsplash.com/photo-1633381521050-26bb467d9d5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+                  alt=""
+                />
+              </div>
+              <div class="profileInfo">
+                <div class="profileId">jenifer</div>
+                <div class="feedLocation"><span>어느해안가</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="profileMenu">
+            <button type="button">···</button>
+          </div>
+        </div>
+        <div class="feedImg">
+          <img
+            src="https://images.unsplash.com/photo-1665161432319-500e5ea7b3fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+            alt=""
+          />
+        </div>
+        <div class="feedMenubar">
+          <div class="iconBox">
+            <div class="likeBox">
+              <!-- 좋아요, 코멘트 등 아이콘 영역-->
+              <div class="heartImg"></div>
+              <div class="commentImg"></div>
+              <div class="dmImg"></div>
+            </div>
+            <!-- 피드 북마크 영역 -->
+            <div class="bookmarkBox">
+              <div class="bookmarkImg"></div>
+            </div>
+          </div>
+
+          <div class="likeCount">좋아요 387개</div>
+
+          <div class="commentList">
+            <div class="eachComments">
+              <span class="userName">abcde</span>
+              <span class="userComment">사진이 이뻐요!!</span>
+            </div>
+
+            <div class="eachComments">
+              <span class="userName">가나다</span>
+              <span class="userComment">사진이 별로에요!!</span>
+            </div>
+
+            <div class="eachComments">
+              <span class="userName">가나다</span>
+              <span class="userComment">근데 어딘가요??</span>
+            </div>
+          </div>
+        </div>
+        <!-- 덧글 영역 -->
+        <div class="feedComment">
+          <div class="comment">
+            <button class="emojiBtn" type="menu">
+              <i class="fa-regular fa-face-smile"></i>
+            </button>
+            <input
+              class="commentInput"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+          </div>
+          <div class="commentRegi">
+            <button class="postBtn" type="button" disabled>게시</button>
+          </div>
+        </div>
+      </div>
+
+    <script text="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

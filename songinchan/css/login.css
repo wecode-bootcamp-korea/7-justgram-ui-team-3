@@ -1,0 +1,84 @@
+/* 2차 리팩토링 - 버튼 활성화여부에 따른 CSS 구분 */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapLoginBox {
+  display: flex;
+  flex-flow: column wrap; /* 세로정렬 및 줄넘김을 한번에 처리하는 속성 */
+  flex-basis: auto;
+  align-items: center;
+  /* justify-content: flex-start; 여기선 안해도 무방함 */
+
+  position: relative; /* foot 위치를 잡기 위해 속성 부여*/
+
+  width: 348px;
+  height: 396px;
+  margin: 43px auto 0 auto;
+  text-align: center;
+  line-height: 1em; /* 이 속성을 안주면 기본상하영역이 폰트사이즈만큼 커진다 1em은 글자보다 더 추가되는 영역을 제로화시킴*/
+  padding: 10px 10px;
+  border: 1px solid rgba(219, 219, 219, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 1px;
+}
+
+#mainTitle {
+  font-family: "Lobster Two", cursive;
+  font-size: 47px;
+  font-weight: lighter;
+  vertical-align: baseline;
+  padding: 20px 0;
+}
+
+#userInput,
+#pwInput {
+  width: 266px;
+  margin: 3px 0;
+  padding: 9px 0 7px 8px;
+  font-size: 12px;
+  color: rgba(70, 70, 70, 1);
+  vertical-align: baseline;
+}
+
+.wrapLoginBox input {
+  background-color: rgba(250, 250, 250, 1);
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+#loginBtn {
+  margin-top: 14px;
+  width: 266px;
+  padding: 5px 0;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.btnDisable {
+  background-color: rgba(198, 222, 250, 1); /* 버튼 비활성화시 */
+  cursor: not-allowed; /* 버튼 비활성화시 */
+}
+
+.btnEnable {
+  background-color: rgba(65, 147, 239, 1); /* 버튼 활성화시 */
+  cursor: pointer; /* 버튼 활성화시 */
+}
+
+.foot {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.foot a {
+  text-decoration: none;
+  font-size: small;
+  color: rgba(21, 54, 103, 1);
+}

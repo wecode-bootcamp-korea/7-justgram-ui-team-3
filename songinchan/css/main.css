@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.box {
+  margin: auto;
+  max-width: 975px;
+  min-width: 500px;
+
+  /* 영역확인용 */
+  /* border: 1px solid gray; */
+}
+
+/* 헤더부분 컨테이너 */
+
+.header {
+  margin-bottom: 100px;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+
+  max-width: 975px;
+  min-width: 500px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* 영역확인 */
+  /* border: 2px solid rebeccapurple; */
+}
+
+/* 헤더부분 중 좌측 로고타입 플렉스 컨테이너 */
+.logoTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 8px;
+
+  /* 영역확인 */
+  /* background-color: aqua; */
+}
+.title {
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+}
+
+#logoImg {
+  height: 30px;
+  padding-top: 5px;
+}
+/* 헤더부분 중 가운데 검색창 플렉스 컨테이너 */
+.searchBar {
+  /* 영역확인 */
+  /* background-color: aqua; */
+
+  width: 268px;
+  height: 36px;
+  border-radius: 5px;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+
+  /* 가운데 정렬 하고싶으면 속성값을 'center'로 바꾸시오 */
+  justify-content: flex-start;
+
+  gap: 3px;
+  align-items: center;
+  z-index: 1; /*피드 스크롤시 헤더부분 뒤쪽으로 지나가게 하면서 헤더의 폰트에는 영향력을 행사하지 않도록 일종의 레이어 전면배치 효과랄까?*/
+  opacity: 1;
+  padding-left: 10px;
+  color: #8e8e8e;
+  overflow: auto;
+}
+
+.searchBar_input {
+  border: none;
+  width: inherit;
+  background: transparent; /* 피드 스크롤시 고정 헤더에서 비침 효과 추가 */
+}
+
+.searchBar_input:focus {
+  outline: none; /* input창이 활성화되어도 보더라인 제거!! */
+}
+
+.searchBar_input::placeholder {
+  color: #8e8e8e;
+}
+
+/* 헤더부분 중 우측 아이콘 플렉스 컨테이너 */
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  height: 28px;
+}
+
+/* 피드 영역 */
+.feedBox {
+  width: 472px;
+  margin-bottom: 13px;
+  margin-left: 150px;
+  border: 1px solid #dcdbdb;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.feedHeader {
+  width: 472px;
+  height: 58px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  /* 영역확인용 */
+  /* background-color: yellow; */
+}
+
+.profileBox {
+  width: 410px;
+  height: 42px;
+
+  display: flex;
+  justify-content: row;
+  align-content: flex-start;
+  align-items: center;
+
+  /* 영역확인용 */
+  /* background-color: #dcdbdb; */
+}
+
+.profileInBox {
+  margin: 8px, 4px, 8px, 12px;
+
+  width: 410px;
+  height: 42px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.profileBorder {
+  height: 32px;
+  width: 32px;
+  border: none;
+  border-radius: 70px;
+  overflow: hidden;
+}
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profileId {
+  text-align: left;
+  margin-left: 10px;
+  color: blue;
+  font-size: 14px;
+}
+
+/* 피드 영역 */
+.feedLocation {
+  text-align: left;
+  margin-left: 10px;
+  color: grey;
+  font-size: 12px;
+}
+
+.profileMenu button {
+  text-align: right;
+  font-size: 30px;
+  border: none;
+  background: transparent;
+}
+
+.feedImg {
+  width: 470px;
+  height: 587.5px;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feedImg img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.feedMenubar {
+  width: 445px;
+  min-height: 60px;
+  padding: 0 12px 6px 12px;
+  margin-top: 4;
+}
+
+/* 피드 하단부 영역 */
+
+/* .likeBox button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+} */
+
+.iconBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* 영역확인용*/
+  /* background-color: yellow; */
+}
+
+.likeBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+
+  /* 영역확인용*/
+  /* background-color: red; */
+}
+
+/* img sprite 추가 변경 영역 */
+.heartImg,
+.commentImg,
+.dmImg,
+.bookmarkImg {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+.heartImg {
+  background: url(../image/icons.jpg) no-repeat;
+  background-position: -13px -25px;
+}
+.commentImg {
+  background: url(../image/icons.jpg) no-repeat;
+  background-position: -60px -25px;
+}
+.dmImg {
+  background: url(../image/icons.jpg) no-repeat;
+  background-position: -108px -25px;
+}
+.bookmarkImg {
+  background: url(../image/icons.jpg) no-repeat;
+  background-position: -199px -25px;
+}
+
+.likeCount {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.feedMenuBar {
+  display: block;
+  flex-direction: column;
+}
+
+/* 댓글영역 */
+.feedComment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 12px 6px 12px;
+  margin: 10px 0;
+  border-top: 1px solid #dcdbdb;
+}
+
+.feedComment button,
+input {
+  border: none;
+  background-color: transparent;
+}
+
+.comment {
+  padding-top: 7px;
+}
+
+.emojiBtn {
+  cursor: pointer;
+}
+
+.comment input {
+  width: 340px;
+  font-size: 13px;
+
+  /* area check */
+  /* background-color: gray; */
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.userComment {
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+.comment input:focus {
+  outline: none; /* input창이 활성화되어도 보더라인 제거!! */
+}
+
+.commentRegi {
+  padding-top: 10px;
+}
+
+.postBtn {
+  color: rgba(65, 147, 239, 1);
+  /* cursor: not-allowed; */
+  font-size: 16px;
+  font-weight: bolder;
+  color: rgba(198, 222, 250, 1);
+  cursor: not-allowed;
+}
+
+/*게시버튼 활성화여부 js에서 함수로 구현되는 CSS*/
+/* #btnDisable {
+  color: rgba(198, 222, 250, 1);
+  cursor: not-allowed;
+} */
+
+.btnEnable {
+  color: rgba(65, 147, 239, 1);
+  cursor: pointer;
+}
