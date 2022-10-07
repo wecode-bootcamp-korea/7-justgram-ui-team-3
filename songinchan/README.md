@@ -2,11 +2,14 @@
 
 # justgram - UI
 
-221004 화요일 프로젝트 시작
+## 221004 화요일 프로젝트 시작
+
 Justcode 7기 1주차 프로젝트
 
-2022.10.08.토. 오전 06:49 까지 개인 git, GitHub, GitHub team에서 별도의 branch로 작업 후,
-PullRequest를 위해 종료하고 팀 레포로 합류
+## issue
+
+- 2022.10.08.토 git push는 multi-remote가 되지만 git fetch는 한군데만 가능.
+- **git fetch 이전문제로 이전 commit이 모두 날아감.**
 
 ---
 
