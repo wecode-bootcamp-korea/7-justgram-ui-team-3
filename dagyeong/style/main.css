@@ -1,15 +1,17 @@
-/* body {
-  display: flex;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
 
 hr {
-  margin: 0;
+  width: 100%;
+  background: gainsboro;
+  height: 1px;
+  border: 0;
 }
 /* 헤더 */
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
   height: 30px;
 }
 
@@ -30,12 +32,13 @@ img:not(.search_logo) {
 .header_logo > span {
   align-items: center;
   margin-left: 5px;
+  font-family: "Lobster Two", cursive;
 }
 
 .header_search {
   width: 200px;
   background-color: #efefef;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .header_search > img {
@@ -59,7 +62,7 @@ section {
 }
 
 .container {
-  width: 550px;
+  width: 480px;
   max-height: 850px;
   border: 2px solid gainsboro;
   border-radius: 10px;
@@ -80,12 +83,12 @@ section {
 .top_content > span {
   font-weight: 700;
   margin-top: 7px;
-  margin-left: -357px;
+  margin-left: -285px;
 }
 
 .middle_content > img {
   width: 100%;
-  height: 50vh;
+  height: 500px;
 }
 
 /* 좋아요 이모티콘 */
@@ -98,14 +101,13 @@ section {
 }
 
 .reaction > img:nth-child(4) {
-  margin-left: 425px;
+  margin-left: 355px;
   margin-right: 0;
 }
 
-/* 내용 */
+/* 게시글 */
 .sentence {
   line-height: 8px;
-  font-size: 16px;
   margin: 8px;
 }
 
@@ -136,20 +138,21 @@ section {
   border-top: 1px solid gainsboro;
 }
 
-.comment > img {
-  margin-top: 2px;
-  margin-left: 5px;
+.highlight {
+  font-weight: 800;
+  margin-right: 8px;
 }
 
 .comment > input {
   border: none;
-  width: 450px;
+  width: 380px;
   margin-left: 10px;
   height: 30px;
   outline: none;
 }
 
 .comment > button {
+  width: 40px;
   color: dodgerblue;
   background-color: transparent;
   border: none;
