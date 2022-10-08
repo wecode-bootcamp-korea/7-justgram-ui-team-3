@@ -1,5 +1,5 @@
-const idInput = document.getElementsByClassName("idBox");
-const pwInput = document.getElementsByClassName("pwBox");
+const idInput = document.getElementsByClassName("idBox")[0];
+const pwInput = document.getElementsByClassName("pwBox")[0];
 
 const button = document.getElementsByClassName("btn")[0];
 
