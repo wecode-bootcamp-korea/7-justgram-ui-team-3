@@ -60,7 +60,7 @@ section {
 
 .container {
   width: 550px;
-  height: 835px;
+  max-height: 850px;
   border: 2px solid gainsboro;
   border-radius: 10px;
   margin-top: 30px;
@@ -114,11 +114,15 @@ section {
   font-weight: 600;
 }
 
-.sentence > p:nth-child(4) {
+.sentence > p > b {
+  margin-right: 5px;
+}
+
+.sentence > p:nth-child(5) {
   color: gray;
 }
 
-.sentence > span:nth-child(5) {
+.sentence > span:nth-child(6) {
   font-size: 11px;
 }
 

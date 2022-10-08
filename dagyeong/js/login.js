@@ -1,12 +1,32 @@
-const idBox = document.getElementsByClassName("idBox");
-const pwBox = document.getElementsByClassName("pwBox");
+const idInput = document.getElementsByClassName("idBox");
+const pwInput = document.getElementsByClassName("pwBox");
 
-const button = document.getElementsByClassName(".btn");
+const button = document.getElementsByClassName("btn")[0];
 
-pwBox.addEventListener("keyup", activeEvent);
-idBox.addEventListener("keyup", activeEvent);
-// button.addEventListener("keyup", activeEvent);
+let idValue = "";
+let pwValue = "";
 
-button.addEventListener("keyup", function (e) {
-  console.log(e);
+idInput.addEventListener("input", (e) => {
+  idValue = e.target.value;
+  console.log(idValue, pwValue);
+  console.log(button.disabled);
+  console.log(button.style);
+  if (idValue !== "" && pwValue !== "") {
+    button.disabled = false;
+    button.style.cursor = "pointer";
+  } else {
+    button.disabled = true;
+    button.style.cursor = "not-allowed";
+  }
+});
+
+pwInput.addEventListener("input", (e) => {
+  pwValue = e.target.value;
+  if (idValue !== "" && pwValue !== "") {
+    button.disabled = false;
+    button.style.cursor = "pointer";
+  } else {
+    button.disabled = true;
+    button.style.cursor = "not-allowed";
+  }
 });
