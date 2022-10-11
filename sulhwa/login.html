@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="./style/login.css">
     <title>Justgram</title>
 </head>
 <body>
@@ -17,11 +17,11 @@
                         <div class="title">
                             <p>Justgram</p>
                         </div>
-                        <div class="login">
+                        <form class="login">
                             <input type="text" id="user" placeholder="전화번호, 사용자 이름 또는 이메일" />
                             <input type="password" id="password" placeholder="비밀번호" />
-                            <input type="button" id="login-btn" value="로그인"></input>
-                        </div>
+                            <button class="login-btn" disabled>로그인</button>
+                        </form>
                         <div class="other">
                             <div class="text">
                                 <hr>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     <div class="join">
-                        <p>계정이 없으신가요? <a href="#"> 가입하기 </a></span></p>
+                        <p>계정이 없으신가요? <a href="#"> 가입하기 </a>></p>
                     </div>
                     <div class="download">
                         <p>앱을 다운로드 하세요.</p>
@@ -76,6 +76,6 @@
             </div>
         </div>
     </div>
-    <script src="/js/login.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

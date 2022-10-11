@@ -1,21 +1,29 @@
-const id=document.getElementById("user"),
-    pwd=document.getElementById("password"),
-    loginBtn = document.getElementById("login-btn");
+const id = document.getElementById("user");
+const pwd = document.getElementById("password");
+const loginButton = document.getElementsByClassName("login-btn")[0];
 
-//아이디,비밀번호 둘다 작성 시 로그인 버튼 활성화 (블루컬러)
-function button()   {
-    switch (!(id.value && pwd.value)) {
-        case true: loginBtn.disabled = true; break;
-        case false: loginBtn.disabled = false , loginBtn.style.backgroundColor="#5394f3"; break;
-    }
+let idValue = "";
+let pwValue = "";
+
+id.addEventListener("input", (e) => {
+  idValue = e.target.value;
+
+  updateLoginButtonDOM();
+});
+
+pwd.addEventListener("input", (e) => {
+  pwValue = e.target.value;
+
+  updateLoginButtonDOM();
+});
+
+function updateLoginButtonDOM() {
+  if (idValue.length < 0 && pwValue.length < 0) {
+    loginButton.disabled = true;
+    loginButton.style.cursor = "not-allowed";
+  } else {
+    loginButton.disabled = false;
+    loginButton.style.cursor = "pointer";
+    loginButton.style.backgroundColor = "blue";
+  }
 }
-
-//로그인버튼 클릭 시 메인화면으로 넘어가는 이벤트
-function clickButton(){
-    location.href ="/main.html";
-}
-
-
-id.addEventListener('keyup', button);
-pwd.addEventListener('keyup', button);
-loginBtn.addEventListener('click', clickButton);
