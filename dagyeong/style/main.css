@@ -107,35 +107,32 @@ section {
 
 /* 게시글 */
 .sentence {
-  line-height: 8px;
+  display: flex;
   margin: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-direction: column;
+  line-height: 16px;
 }
 
-.sentence > p:nth-child(1) {
-  margin-top: 3px;
+.feed-comment-card {
+  display: flex;
+  line-height: 24px;
+}
+
+.sentence > span:nth-child(1) {
   font-weight: 600;
 }
 
-.sentence > p > b {
-  margin-right: 5px;
-}
-
-.sentence > p:nth-child(5) {
+.sentence > span:nth-child(4) {
+  margin-top: 3px;
+  font-size: 13px;
   color: gray;
 }
 
-.sentence > span:nth-child(6) {
+.sentence > span:last-child {
+  margin-top: 5px;
   font-size: 11px;
-}
-
-/* 댓글 */
-.comment {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  margin-top: 20px;
-  padding: 5px;
-  border-top: 1px solid gainsboro;
 }
 
 .highlight {
@@ -143,9 +140,23 @@ section {
   margin-right: 8px;
 }
 
+/* 댓글 */
+.comment {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  margin-top: 10px;
+  padding: 5px;
+  border-top: 1px solid gainsboro;
+}
+
+.comment > img {
+  margin-left: 5px;
+}
+
 .comment > input {
   border: none;
-  width: 380px;
+  width: 400px;
   margin-left: 10px;
   height: 30px;
   outline: none;
@@ -156,4 +167,5 @@ section {
   color: dodgerblue;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
