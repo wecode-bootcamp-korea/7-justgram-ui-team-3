@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+
+hr {
+  width: 100%;
+  background: gainsboro;
+  height: 1px;
+  border: 0;
+}
+/* 헤더 */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+img:not(.search_logo) {
+  width: 22px;
+  height: 22px;
+}
+
+.search_logo {
+  width: 10px;
+  height: 10px;
+}
+
+.header_logo {
+  display: flex;
+}
+
+.header_logo > span {
+  align-items: center;
+  margin-left: 5px;
+  font-family: "Lobster Two", cursive;
+}
+
+.header_search {
+  width: 200px;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+
+.header_search > img {
+  margin-left: 10px;
+}
+
+.header_search > input {
+  border: none;
+  background: transparent;
+  height: 25px;
+  outline: none;
+}
+
+.header_img > img {
+  margin-right: 10px;
+}
+/* 인스타그램 섹션 */
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 480px;
+  max-height: 850px;
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.top_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.top_content > img {
+  width: 42px;
+  height: 42px;
+}
+
+.top_content > span {
+  font-weight: 700;
+  margin-top: 7px;
+  margin-left: -285px;
+}
+
+.middle_content > img {
+  width: 100%;
+  height: 500px;
+}
+
+/* 좋아요 이모티콘 */
+.reaction {
+  padding: 5px;
+}
+
+.reaction > img:nth-child(-n + 4) {
+  margin-right: 3px;
+}
+
+.reaction > img:nth-child(4) {
+  margin-left: 355px;
+  margin-right: 0;
+}
+
+/* 게시글 */
+.sentence {
+  display: flex;
+  margin: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-direction: column;
+  line-height: 16px;
+}
+
+.feed-comment-card {
+  display: flex;
+  line-height: 24px;
+}
+
+.sentence > span:nth-child(1) {
+  font-weight: 600;
+}
+
+.sentence > span:nth-child(4) {
+  margin-top: 3px;
+  font-size: 13px;
+  color: gray;
+}
+
+.sentence > span:last-child {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.highlight {
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+/* 댓글 */
+.comment {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  margin-top: 10px;
+  padding: 5px;
+  border-top: 1px solid gainsboro;
+}
+
+.comment > img {
+  margin-left: 5px;
+}
+
+.comment > input {
+  border: none;
+  width: 400px;
+  margin-left: 10px;
+  height: 30px;
+  outline: none;
+}
+
+.comment > button {
+  width: 40px;
+  color: dodgerblue;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
